@@ -13,7 +13,7 @@ public class HelloWorldController {
 		return ResponseEntity.ok("Hello!");
 	}
 
-	@GetMapping("/")
+	@GetMapping("/healthz")
 	public ResponseEntity<HealthCheck> getHealthz() {
 		DiskSpace diskSpace = new DiskSpace(73492478499L, 4739247249L, 4302948L);
 		HealthCheck healthCheck = new HealthCheck("OK", "0.0.1", "up since 2020-08-04 08:00:05", diskSpace);
