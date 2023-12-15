@@ -2,19 +2,19 @@
 
 #### 1. Clone the project on your local machine
 
-git clone git@github.com:manisekharan/hello-world.git
+git clone git@github.com:manisekharan/docker-demo.git
 
-#### 2. Go to hello-world folder
+#### 2. Go to docker-demo folder
 
-cd hello-world
+cd docker-demo
 
 #### 3. Build DockerFile
 
-docker build -f DockerFile -t hello-world .
+docker build -f DockerFile -t docker-demo .
 
 #### 4. Run docker image
 
-docker run -p 8080:8080 hello-world
+docker run -p 8080:8080 docker-demo
 
 #### 5. Once Spring Boot Application boots up and the server is running on port 8080, try below endpoints using browser.
 
