@@ -11,5 +11,5 @@ RUN mvn -f /home/app/pom.xml clean package
 #
 FROM openjdk:11-jre-slim
 EXPOSE 8080
-COPY --from=build /home/app/target/hello-world.jar /usr/local/lib/hello-world.jar
-ENTRYPOINT ["java", "-jar", "/usr/local/lib/hello-world.jar"]
+COPY --from=build /home/app/target/docker-demo.jar /usr/local/lib/docker-demo.jar
+ENTRYPOINT ["java", "-jar", "/usr/local/lib/docker-demo.jar"]
